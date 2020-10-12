@@ -1,0 +1,20 @@
+debut Factorielle
+    debut declaration VARIABLES LOCALES
+        var entree :N <- 0
+        var factorielle :N <- 0
+    fin declaration VARIABLES LOCALES
+    
+    Afficher "Saisir un nombre entier positif ou égal à 0 pour en faire la factorielle"
+    saisir entree
+    Afficher "La factorielle de", entree, "est :"
+    
+    SI entree => 0 AND entree MODULO 1 != 0
+        ALORS
+        factorielle <- 1
+        tant que entree > 1
+            factorielle <- factorielle * entree
+            entree <- entree - 1
+        fin tant que
+        Afficher factorielle
+    finsi
+fin Factorielle
