@@ -1,0 +1,83 @@
+Debut decomposition
+   declaration variables locales
+      var somme : N <- 0
+      var paire :B <- VRAI
+   fin declaration
+   afficher "Somme à décomposer : "
+   saisir somme
+
+   si somme MOD 0,1 /= 0
+      alors
+         somme <- somme - somme MOD 0,1 + 0,1
+   finsi
+
+   si somme MOD 0,2 /= 0
+      alors
+         si somme >= 0,5
+            alors
+               paire <- FAUX
+               somme <- somme - 0,5
+            sinon
+               somme <- somme +0,1
+         finsi
+   finsi
+
+
+
+   
+   
+   si somme  >= 100
+      alors
+         si somme >= 200
+            alors 
+               afficher somme DIV 100, " billets de 100 €"
+            sinon
+               afficher "1 billet de 100 €"
+         finsi
+         somme <- somme MOD 100
+   finsi
+   si somme  >= 50
+      alors
+         afficher "1 billet de 50 €"
+         somme <- somme MOD 50
+   finsi
+   si somme  >= 20
+      alors
+         si somme >= 40
+            alors 
+               afficher somme DIV 20, " billets de 20 €"
+            sinon
+               afficher "1 billet de 20 €"
+         finsi
+         somme <- somme MOD 20
+   finsi
+   si somme  >= 2
+      alors
+         si somme >= 4
+            alors 
+               afficher somme DIV 2, " pieces de 2 €"
+            sinon
+               afficher "1 pieces de 2 €"
+         finsi
+         somme <- somme MOD 2
+   finsi
+   si somme  >= 1
+      alors
+         afficher "1 pieces de 1 €"
+         somme <- somme MOD 1
+   finsi
+   si NON paire
+      alors
+         afficher "1 pieces de 0,5 €"
+   finsi
+   si somme  >= 0,2
+      alors
+         si somme >= 0,4
+            alors 
+               afficher somme DIV 0,2, " pieces de 0,2 €"
+            sinon
+               afficher "1 pieces de 0,2 €"
+         finsi
+         somme <- somme MOD 0,2
+   finsi
+Fin decomposition
