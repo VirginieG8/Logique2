@@ -1,0 +1,57 @@
+
+-----------------SOLUTION 1 --------------------
+
+debut compteur 
+    déclaration variables locales
+    var cpt :N <- 0
+    fin variables locales
+
+    pour cpt allant de 0 à 999
+        SI(cpt<10)
+            ALORS
+            afficher '00'
+            SINON
+            SI(cpt<100)
+                ALORS
+                afficher '0'
+            fin SI
+        fin SI
+        afficher cpt, ','
+    cpt suivant
+
+fin compteur
+
+-----------------SOLUTION 2 --------------------
+
+début compteur2
+    déclaration variables locales
+    var i :N <- 0
+    var j :N <- 0
+    var k :N <- 0
+    fin variables locales
+
+pour i allant de 0 à 9
+    pour j allant de 0 à 9
+        pour k allant de 0 à 9
+            afficher i, j, k
+        k suivant
+    j suivant
+i suivant
+
+fin compteur2
+
+
+---------------SOLUTION 3-----------------
+
+début compteur3
+    déclaration variables locales
+    fin variables locales
+
+    pour cpt allant de 0 à 999
+    
+    cpt suivant
+fin compteur3
+
+
+
+
