@@ -1,0 +1,44 @@
+début RechercheText
+déclaration Variables Locales
+
+    var texteSrc :T <- ""
+    var recherche :T <- ""
+    var replace :T <- ""
+
+    var srcLen :N <- 0
+    var rechLen :N <- 0
+    var replLen :N <- 0
+
+    var cpt :N <- 0
+
+
+fin Variables locales
+
+Afficher "Saisir un texte source"
+saisir texteSrc
+
+Afficher "Saisir un texte à chercher"
+saisir recherche
+
+Afficher "Saisir le texte de remplacement"
+saisir replace
+
+srcLen <- longueur(texteSrc)
+rechLen <- longueur(recherche)
+replLen <- longueur (replace)
+
+
+tant que cpt =< (srcLen-rechLen)
+    si sousChaine(texteSrc,cpt,rechLen+1)=recherche
+            AlORS
+                texteSrc <- sousChaine(texteSrc, 1, cpt) (+) replace (+) sousChaine(texteSrc,cpt+replLen,srcLen+1) 
+                cpt <- cpt + replLen
+            SINON
+                cpt <- cpt+1
+            
+    fin si
+fin tantque
+
+Afficher texteSrc
+
+fin RechercheText
