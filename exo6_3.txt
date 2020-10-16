@@ -1,0 +1,25 @@
+Debut programme
+    Varibale locales
+        Var textsrc : T <-- "" 
+        Var textrech : T <-- "" 
+        Var textmod : T <-- "" 
+        Var textremp : T <-- "" 
+        Var cpt : N <-- 0 
+    Fin variables locales
+
+    Afficher "Entrez un texte source" 
+    Saisir textsrc
+    Afficher "Entrez un texte à rechercher"
+    Saisir textrech
+    Afficher "Entrez texte à remplacer" 
+    Saisir textremp
+
+    Tant que cpt = (longueur(textsrc)- longueur(textrech))+1 
+        Si textrech = souschaine(textsrc, cpt, cpt+longueur(textmod))
+            Alors cpt <-- cpt + textremp
+            textmod <-- textmod + textremp
+            sinon textmod <-- textmod + caract(textsrc, cpt)
+        fin si 
+    Fin tant que
+
+
