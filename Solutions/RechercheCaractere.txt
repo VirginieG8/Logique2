@@ -1,0 +1,37 @@
+Debut RechercheCaractere
+    Declaration de variables locales
+        Var entree : T <- ""
+        Var car : C <- ''
+       
+        Var premierePos : N <- 0
+        Var dernierePos : N <- 0
+        Var Occu : N <-0
+        Var i : N <- 0
+    Fin Declaration de variables locales
+
+   Afficher "entrez votre texte"
+   Saisir entree
+   Afficher "entrez un caractere"
+   Saisir car
+
+   tant que i <= longueur(entree) 
+       si Caract(entree, i) = car
+           alors 
+              dernierePos <- i 
+            
+              Occu <- Occu +1 
+              si Occu != 0
+              alors
+                premierePos <- i 
+              fin si      
+      fin si 
+i <- i + 1
+
+Fin tant que
+
+
+Afficher "La premiere position est ", premierePos
+Afficher " La derniere position est", dernierePos
+Afficher " Le nombre de fois qu'ils apparait", Occu
+
+Fin Prog RechercheCaractere
