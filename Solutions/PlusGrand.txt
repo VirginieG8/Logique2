@@ -1,0 +1,31 @@
+debut plusGrand
+   declaration des variables locales
+      var text1 : T <- ""
+      var text2 : T <- ""
+      var pos : N <- 1
+      var egal : B <- vrai
+   fin déclaration
+   afficher "entrez les deux mot à comparer : "
+   saisir text1
+   saisir text2
+
+   pos <- 1
+   egal <- vrai
+   tantque pos <= longueur(text1) et pos <= longueur(text2) et egal
+      si caract(text1 , pos) = caract(text2, pos)
+        alors
+           pos -> pos + 1
+        sinon
+           egal <- faux
+      finsi
+   fintantque
+   
+   si egal
+      alors afficher longueur(text1) > longueur(text2)
+      sinon afficher caract(text1 , pos) > caract(text2, pos)
+   finsi
+   
+fin plusGrand
+   
+   
+   
