@@ -1,0 +1,38 @@
+Debut Prog RechercherRemplacer
+    Declaration de variables locales
+        Var TexteSource : T <- ""
+        Var TexteRecherche : T <- ""
+        Var TexteRemplace : T <- ""
+        Var LongueurSource : N <- 0
+        Var LongueurRecherche : N <- 0
+        Var result : T <- ""
+        Var Occu : N <-0
+        Var i : N <- 0
+    Fin Declaration de variables locales
+
+Afficher "entrez votre texte Source"
+Saisir TexteSource
+Afficher "entrez votre texte Recherche"
+Saisir TexteRecherche
+Afficher "entrez votre texte remplace"
+Saisir TexteRemplace
+
+LongueurSource <- longueur(TexteSource)
+LongueurRecherche <- longueur(TexteRecherche)
+
+
+    tant que i <= ((LongueurSource - LongueurRecherche) + 1)
+
+        si sousChaine(TexteSource, i, LongueurRecherche + i) = TexteRecherche
+            alors result <- result (+) TexteRemplace
+            i <- i + LongueurRecherche
+        sinon
+            result <- result (+) caract(TexteSource, i)
+            i <- i + 1
+        fin si
+        
+    fin tant que
+
+Afficher result
+
+Fin Prog RechercherRemplacer
