@@ -1,0 +1,41 @@
+Dbt pgm
+
+variables
+textrech : T <- ""
+textsrc : T <- ""
+longsrc : N <- 0
+longrech : N<-0
+deb : N<-0
+fin : N<-0
+occu : N<-0 
+ppos : N <- 0
+dpos : N <- 0
+
+Afficher" Entrer un texte source et un texte à rechercher"
+saisir textesrc
+saisir texterech
+
+longsrc <-longueur(textsrc)
+longrech <-longueur(textrech)
+
+deb <- 1
+fin <- longrech +1
+
+Tant que fin <= longsrc +1
+ si textrech = souschaine(textsrc,deb,fin)
+	alors occu = occu + 1
+        dpos = fin
+    	Si occu = 1
+           ppos = fin
+	fin de si
+	deb<- deb +longrech
+	fin <- fin +longrech
+ sinon 	
+	deb <- deb+1
+	fin <- fin +1
+ fin de si
+fin de tant que 
+
+fin de pgm
+
+
