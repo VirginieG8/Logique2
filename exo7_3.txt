@@ -1,0 +1,13 @@
+Debut programme
+    Variabbles locales
+        Var Tab = tableau[16] : N 
+        Var i : N <-- 0 
+    Fin variables locales
+    Tab[0] <-- 1
+    Pour i allant de 1 à 15
+        Tab[i] <-- 2*Tab[i-1]
+    i suivant
+    Pour i allant de 1 à 15
+        Afficher Tab[1]
+    i suivant
+Fin programme
