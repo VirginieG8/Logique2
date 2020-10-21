@@ -1,0 +1,33 @@
+Debut programme
+    Varibales locales
+        Var Tab = Tableau[10] : N 
+        Var i : n <-- 0 
+        Var min : n <-- 0 
+        Var indiceMin : n <-- 0 
+        Var max : n <-- 0 
+        Var indiceMax : n <-- 0
+    Fin variables locales
+    Pour i allant de 0 à 9
+        Afficher "Entrez une valeur de l'élement" , 0 , "du tableau"
+        Saisir tab[i]
+    i suivant
+
+    min <-- Tab[0]
+    indiceMin <-- 0
+    max <-- Tab[0]
+    indiceMax <-- 0 
+
+    Pour i allant de 0 à 9
+        Si Tab[i] <= min
+            alors min <-- Tab[i]
+            indiceMin <-- i 
+        Fin si
+        Si Tab[i] => max
+            Alors max <-- Tab[i]
+            indiceMax <-- i
+        Fin si
+    i suivant
+    Afficher "Le nombre min est :" , min , "il se trouve à l'indice" , indiceMin
+    Afficher "Le nombre max est:" , max , "Il se trouve à l'indice" , indiceMax
+Fin programme
+    
