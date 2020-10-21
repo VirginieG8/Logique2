@@ -1,0 +1,22 @@
+Debut programme 
+    Variables locales
+        Var nb : N <-- 0 
+        Var somme : N <-- 0 
+        Var div : N <-- 1 
+    Fin variables locales
+
+    Tant que nb nb < 100 
+        div <-- 1 
+        somme <-- 0 
+        Tant que div < nb
+            si nb mod div = 0 
+                Alors somme <-- somme + div
+            Fin si
+            div <-- div + 1 
+        Fin tant que 
+        Si nb = somme 
+            Alors afficher " Le nombre parfait est : " , nb
+        Fin si 
+        nb <-- nb + 1 
+    Fin tant que
+Fin programme
