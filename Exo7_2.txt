@@ -1,13 +1,13 @@
 Debut programme
     Varibales locales
-        Var Tab = Tableau[10] : N 
+        Var Tab = n[10][]
         Var i : n <-- 0 
         Var min : n <-- 0 
         Var indiceMin : n <-- 0 
         Var max : n <-- 0 
         Var indiceMax : n <-- 0
     Fin variables locales
-    Pour i allant de 0 à 9
+    Pour i allant de 1 à 10
         Afficher "Entrez une valeur de l'élement" , 0 , "du tableau"
         Saisir tab[i]
     i suivant
@@ -17,7 +17,7 @@ Debut programme
     max <-- Tab[0]
     indiceMax <-- 0 
 
-    Pour i allant de 0 à 9
+    Pour i allant de 1 à 10
         Si Tab[i] <= min
             alors min <-- Tab[i]
             indiceMin <-- i 
