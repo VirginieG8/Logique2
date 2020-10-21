@@ -1,0 +1,16 @@
+Debut programme
+    Variables locales
+        Var cpt : N <-- 0 
+    Fin variables locales
+
+    Tant que cpt <= 999
+        Si cpt < 10
+            Alors afficher "0,0" , cpt
+            sinon si cpt < 100 
+                Alors afficher "0" , cpt
+                Sinon afficher cpt
+            Fin si
+        Fin si
+        Cpt <-- cpt +1 
+    Fin tant que
+Fin programme
