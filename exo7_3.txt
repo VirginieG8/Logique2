@@ -1,6 +1,6 @@
 Debut programme
     Variabbles locales
-        Var Tab = tableau[16] : N 
+        Var Tab = n[16][]
         Var i : N <-- 0 
     Fin variables locales
     Tab[0] <-- 1
