@@ -1,0 +1,24 @@
+Debut programme
+    Variables locales 
+        Var nb : N <-- 3 
+        Var div : N <-- 3
+        Var cpt : N <-- 1 
+        Var Prem : B <-- T 
+    Fin variables locales
+
+    Tant que cpt < 100 
+        Div <-- 3
+        Prem = T
+        Tant que div < nb and Prem
+            si nb mod div = 0
+                Alors Prem <-- F
+                    sinon div <-- div + 2 
+                Fin si
+        Fin tant que
+        Si Prem = T
+            Alors afficher "Le nombre premier est : " , nb 
+                cpt <-- cpt + 1 
+        Fin si
+        nb <-- nb + 2 
+    Fin tant que
+Fin programme
