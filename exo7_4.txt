@@ -1,0 +1,11 @@
+Debut programme
+    Variables locales
+        Tab = n[10][]
+        inverse : n <-- 0 
+    Fin variables locales
+    Pour i allant de 1 à 10/2
+        inverse <-- Tab[i]
+        Tab[i] <-- [10-1-i]
+        Tab[10-1-i] <-- inverse
+    i suivant
+Fin programme
