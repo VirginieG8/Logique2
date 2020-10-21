@@ -1,0 +1,33 @@
+Debut programme
+    Variables locales
+        Var nb : N <-- 0 
+        Var lignes : N <-- 0 
+        Var colonnes : N <-- 0 
+        Var Tab = N [4,4]
+    Fin Variables locales
+    
+    //Remplissage du tableau. 
+    Pour linges allant de 1 à 4 
+        Pour colonnes allant de 1 à 4 
+            Afficher "Entrez valeur pour l'élément lignes, colonnes)
+            Saisir Tab[lignes][colonnes]
+        colonnes suivantes
+    lignes suivantes
+
+    //Diagonales principale
+    Pour lignes allant de 1 à 4 
+        Tab[lignes][lignes] = 1
+    lignes suivantes
+
+    //Diagonales secondaire
+    Pour lignes allant de 1 à 4 
+        Tab[linges][4-1-lignes] = 2 
+    lignes suivantes
+
+    //Affichage tableau
+    Pour lignes allant de 1 à 4 
+        Pour colonnes allant de 1 à 4
+            Afficher Tab[lignes][colonnes] , " " 
+        colonnes suivantes
+    lignes suivantes
+Fin programme
