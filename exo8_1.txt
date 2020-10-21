@@ -1,0 +1,15 @@
+Debut programme
+    Variables locales
+        Var nb : N <-- 0 
+        Var cpt : N <-- 0 
+    Fin variables locales
+
+    Tant que nb < 10 
+        Afficher "Table de" , nb
+        Tant que cpt < 10 
+            cpt <-- cpt +1 
+            Afficher nb , " x " , cpt , " =" , nb * cpt 
+        Fin tant que
+        cpt <-- 0 
+    Fin tant que
+Fin programme
