@@ -5,7 +5,7 @@ Debut programme
 
     Tant que cpt <= 999
         Si cpt < 10
-            Alors afficher "0,0" , cpt
+            Alors afficher "0","0" , cpt
             sinon si cpt < 100 
                 Alors afficher "0" , cpt
                 Sinon afficher cpt
