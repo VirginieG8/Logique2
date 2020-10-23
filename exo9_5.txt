@@ -1,0 +1,21 @@
+Debut programme
+    Variables locales
+        Var tab = N [][]
+        Var NouveauTab = N [][]
+        Var lignes : N <-- 0 
+        Var colonnes : N <-- 0 
+        Var taille : N <-- 0 
+    Fin variables locales
+
+    Pour lignes allant de 1 à taille-1
+        Pour colonnes allant de 1 à taille - 1 
+            NouveauTab[colonnes][taille - 1 - lignes] <-- tab[lignes][colonnes]
+        colonnes suivant
+    lignes suivant
+
+    Pour lignes allant de 1 à taille - 1 
+        Pour colonnes allant de 1 à taille -1 
+            tab[lignes][colonnes] <-- NouveauTab [lignes][colonnes]
+        colonnes suivant
+    lignes suivant
+fin programme
