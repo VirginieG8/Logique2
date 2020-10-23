@@ -1,0 +1,56 @@
+Debut programme
+    Variables locales
+        Var tab = n [][];
+        Var lignes : N <-- 0 
+        Var colonnes : N <-- 0 
+        Var SommeLignes : N <-- 0 
+        Var SommeColonnes : N <-- 0 
+        Var SommeDiaPrim : N <-- 0 
+        Var SommeDiaSecond : N <-- 0 
+        Var Taille : N <-- 0 
+    Fin variables locales
+
+    Pour lignes allant de 1 à Taille
+        Pour colonnes allant de 1 à Taille
+            Afficher tab[lignes][colonnes] 
+        colonnes suivant
+    lignes suivant
+
+    //Somme des lignes
+    Pour lignes allant de 1 à Taille
+        SommeLignes = 0
+        Pour colonnes allant de 1 à Taille
+            SommeLignes = SommeLignes + tab[lignes][colonnes]
+        colonnes suivant
+    lignes suivant
+
+    //Somme des colonnes 
+        Pour colonnes allant de 1 à Taille
+        SommeColonnes = 0
+        Pour lignes allant de 1 à Taille
+            SommeColonnes = SommeColonnes + tab[lignes][colonnes]
+        lignes suivant
+    colonnes suivant
+
+    //Somme diagonale principale
+        SommeDiaPrim = 0
+        Pour lignes allant de 1 à Taille
+            SommeDiaPrim = SommeDiaPrim + tab[lignes][lignes]
+        lignes suivant
+        	
+	//Somme diagonale secondaire 
+		SommeDiaSecond =0; 
+        Pour lignes allant de 1 à taille
+            SommeDiaSecond = SommeDiaSecond + tab[lignes][Taille-1-lignes]
+        lignes suivant
+
+    SommeColonnes = 0
+    SommeLignes = 0 
+
+    si (SommeLignes = SommeColonnes)
+        Alors si (SommeDiaPrim = SommeDiaSecond)
+                Alors afficher "C'est un carré magique" 
+                sinon Afficher "Ce n'est pas un carré magique" 
+            fin si
+    Fin si
+Fin programme
