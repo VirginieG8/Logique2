@@ -6,6 +6,7 @@ Debut programme
         Var Prem : B <-- T 
     Fin variables locales
 
+    nb <-- 2 
     Tant que cpt < 100 
         Div <-- 3
         Prem = T
@@ -16,7 +17,7 @@ Debut programme
                 Fin si
         Fin tant que
         Si Prem = T
-            Alors afficher "Le nombre premier est : " , nb 
+            Alors afficher nb , "est le nombre premier"  
                 cpt <-- cpt + 1 
         Fin si
         nb <-- nb + 2 
