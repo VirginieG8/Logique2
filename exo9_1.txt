@@ -4,29 +4,30 @@ Debut programme
         Var lignes : N <-- 0 
         Var colonnes : N <-- 0 
         Var Tab = N [4,4]
+        Var Taille = N : <-- 0 
     Fin Variables locales
     
     //Remplissage du tableau. 
-    Pour linges allant de 1 à 4 
-        Pour colonnes allant de 1 à 4 
+    Pour linges allant de 1 à Taille 
+        Pour colonnes allant de 1 à Taille 
             Afficher "Entrez valeur pour l'élément lignes, colonnes)
             Saisir Tab[lignes][colonnes]
         colonnes suivantes
     lignes suivantes
 
     //Diagonales principale
-    Pour lignes allant de 1 à 4 
+    Pour lignes allant de 1 à Taille 
         Tab[lignes][lignes] = 1
     lignes suivantes
 
     //Diagonales secondaire
-    Pour lignes allant de 1 à 4 
+    Pour lignes allant de 1 à Taille 
         Tab[linges][4-1-lignes] = 2 
     lignes suivantes
 
     //Affichage tableau
-    Pour lignes allant de 1 à 4 
-        Pour colonnes allant de 1 à 4
+    Pour lignes allant de 1 à Taille 
+        Pour colonnes allant de 1 à Taille
             Afficher Tab[lignes][colonnes] , " " 
         colonnes suivantes
     lignes suivantes
