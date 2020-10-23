@@ -1,6 +1,6 @@
 Debut programme
     Varibales locales
-        Var Tab = n[10][]
+        Var Tab = n[10]
         Var i : n <-- 0 
         Var min : n <-- 0 
         Var indiceMin : n <-- 0 
@@ -8,16 +8,16 @@ Debut programme
         Var indiceMax : n <-- 0
     Fin variables locales
     Pour i allant de 1 à 10
-        Afficher "Entrez une valeur de l'élement" , 0 , "du tableau"
+        Afficher "Entrez une valeur de l'élement" , i , "du tableau"
         Saisir tab[i]
     i suivant
 
-    min <-- Tab[0]
-    indiceMin <-- 0
-    max <-- Tab[0]
-    indiceMax <-- 0 
+    min <-- Tab[1]
+    indiceMin <-- 1
+    max <-- Tab[1]
+    indiceMax <-- 1
 
-    Pour i allant de 1 à 10
+    Pour i allant de 2 à 10
         Si Tab[i] <= min
             alors min <-- Tab[i]
             indiceMin <-- i 
