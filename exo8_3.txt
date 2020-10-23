@@ -5,7 +5,7 @@ Debut programme
         Var div : N <-- 1 
     Fin variables locales
 
-    Tant que nb nb < 100 
+    Tant que nb < 100 
         div <-- 1 
         somme <-- 0 
         Tant que div < nb
