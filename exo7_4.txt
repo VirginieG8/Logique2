@@ -1,6 +1,6 @@
 Debut programme
     Variables locales
-        Tab = n[10][]
+        Tab = n[10]
         inverse : n <-- 0 
     Fin variables locales
     Pour i allant de 1 à 10/2
